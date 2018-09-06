@@ -42,7 +42,6 @@ int max_ink_value(int row, int col, const vector<st_dot> &dots)
   return *max_element(ink_values.begin(), ink_values.end()); // O(n_dots)
 }
 
-
 
 int main() {
   /* Enter your code here. Read input from STDIN. Print output to STDOUT */
@@ -59,7 +58,6 @@ int main() {
     int height, width, n_dots;
     INFILE >> height >> width;
     INFILE >> n_dots;
-    // printf("%d %d %d\n", height, width, n_dots);
     vector<st_dot> dots;
     while (n_dots--) {
       st_dot dot;
