@@ -71,7 +71,6 @@ int min_path(int row, int col, const st_dot &dot)
 // Complexity: O(n_dots).
 int max_ink_value(int row, int col, const vector<st_dot> &dots)
 {
-  if (is_a_dot(row, col, dots)) return dot_at(row, col, dots).darkness; // O(n_dots)
   vector<int> ink_values;
   // Complexity: O(n_dots)
   for (const auto &dot : dots) {
@@ -79,7 +78,7 @@ int max_ink_value(int row, int col, const vector<st_dot> &dots)
     if (value < 0) value = 0;
     ink_values.push_back(value);
   }
-  return *min_element(ink_values.begin(), ink_values.end()); // O(n_dots)
+  return *max_element(ink_values.begin(), ink_values.end()); // O(n_dots)
 }
 
 
