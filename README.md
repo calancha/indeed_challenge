@@ -15,12 +15,6 @@ The paint propagates to neighbor cells in the following way:
 2. If one cell, CELL, might get paint from 2 different neighbours,
    the final CELL darkness is the maximum of the 2 possible darkness.
 
-# Output
-Print to the standard output:
-
-The sum of the darkess values for all the cells in the final configuration.
-Here final configuration means once all drops have leaked to their neighbours.
-
 # Input
 You will receive from the standard input:
 1. An integer, the number of tests.
@@ -32,6 +26,12 @@ You will receive from the standard input:
 
 You must read the input from the standard input and write your output
 to the standard output.
+
+# Output
+Print to the standard output:
+
+The sum of the darkess values for all the cells in the final configuration.
+Here final configuration means once all drops have leaked to their neighbours.
 
 # Example
 For the following input:
