@@ -5,7 +5,7 @@
 
 /*
   Comment the following line when running in HackerRank.
-  Otherwise read the input from a file 'anagram.data'.
+  Otherwise read the input from a file 'paint.data'.
 */
 #define DEBUG 1
 
