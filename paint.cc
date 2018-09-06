@@ -19,26 +19,6 @@ struct Dot {
 typedef struct Dot st_dot;
 
 
-// Predicate: return true if cell at (row, col) is a dot.
-// Complexity: Worse case O(n_dots)
-bool is_a_dot(int row, int col, const vector<st_dot> &dots)
-{
-  return any_of(dots.begin(),
-                dots.end(),
-                [&row, &col](const st_dot &dot)
-                { return row == dot.row && col == dot.col; });
-}
-
-// Return the dot at cell (row, col)
-// Complexity: Worse case O(n_dots)
-const st_dot &dot_at(int row, int col, const vector<st_dot> &dots)
-{
-  for (auto &dot : dots)
-    if (row == dot.row && col == dot.col)
-      return dot;
-}
-
-
 // Return minimum path from DOT to the cell at (row, col)
 // I assume the minimum distance is: just adding the
 // difference on cols/rows.
