@@ -1,8 +1,8 @@
 # HackerRank Indeed.com Paint Problem
 
-You are a painter and you have a M x N (rows x columns) grid.
-In R of the cells you have dropped a paint drop.
-Each drop has its own darkness D.
+You are a painter and you have a M x N (rows x columns) grid.<br/>
+In R of the cells you have dropped a paint drop.<br/>
+Each drop has its own darkness D.<br/>
 Every darkness is an integer
 ```0 < D <= 255```
 
@@ -29,32 +29,36 @@ to the standard output.
 
 # Example
 For the following input:
+```
 1
 3 4
 2
 0 0 255
 1 2 255
-
+```
 You should print out to the standard output:
+```
 3046
+```
 
 #Explation
 This is the initial configuration:
-
+```
 255   .     .      .
 
 .     .     255    .
 
 .     .     .      .
-
+```
 
 The final configuration is as follows:
+```
 255 254 254 253
 
 254 254 255 254
 
 253 253 254 253
-
+```
 
 # A C++ implementation
 
