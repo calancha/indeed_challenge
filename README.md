@@ -41,7 +41,7 @@ You should print out to the standard output:
 3046
 ```
 
-#Explation
+# Explation
 This is the initial configuration:
 ```
 255   .     .      .
